@@ -1,8 +1,13 @@
-import React from 'react';
+import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
-import './css/index.css';
-import App from './App';
 
+class App extends Component {
+  render(){
+    return(
+      <div>Hello World</div>
+    );
+  }
+}
 
-ReactDOM.render(<App/>, document.getElementById('root'));
+ReactDOM.render(<App/>, document.querySelector('#root'));
 
