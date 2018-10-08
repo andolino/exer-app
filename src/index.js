@@ -23,11 +23,14 @@ class App extends Component {
   render(){
     return(
       <div>
-        <div>
-          <Link to="/group">Transition Group</Link>
-        </div>
         <BrowserRouter>
-            <Route path="/group" component={TGroup}/>
+          <div>
+              <header>
+                <Link to="/group">Transition Group</Link>
+              </header>
+              <hr/>
+              <Route path="/group" component={TGroup}/>
+            </div>
         </BrowserRouter>
       </div>
 
