@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
-import { BrowserRouter, Route } from 'react-router-dom';
+import { BrowserRouter, Route, Link } from 'react-router-dom';
 import { Transition } from 'react-transition-group/Transition';
 
 
@@ -23,6 +23,9 @@ class App extends Component {
   render(){
     return(
       <div>
+        <div>
+          <Link to="/group">Transition Group</Link>
+        </div>
         <BrowserRouter>
             <Route path="/group" component={TGroup}/>
         </BrowserRouter>
