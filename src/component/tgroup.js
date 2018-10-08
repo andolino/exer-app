@@ -16,7 +16,7 @@ export default class TGroup extends Component{
       items: newItems
     });
   }
-
+  
   removeItems(){
     let d = this.state.items.slice(0, -1);
 
